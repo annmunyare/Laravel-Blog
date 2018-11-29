@@ -153,4 +153,71 @@ class PostController extends Controller
         // return view(posts.index, compact('posts', 'archives'));
     }
 
+    // public function showPharmacy($associative Array)
+    // {
+    //     return static::selectRaw(' 
+    //     year(created_at) year,
+    //     monthname(created_at) month,
+    //     count(*) published')
+    //     ->orderByRaw('min(created_at) desc')
+    //     ->get();
+
+
+    // }
+
+    // public function showPharmacy($associativeArray){
+    //     $serviceCharge = DB::table('service_charge')
+    //     ->select(DB::raw("service_id"))
+    //     ->orderByRaw('min(created_at) desc')
+    //     ->get();
+         
+    //     foreach ($serviceCharge as $sc) {
+    //     $vc = VisitCharge::select("service_charge_id")->where('id', $sc->id)->get();
+    //     foreach ($vc as $v) {
+    //         $vc = Visit::select("id")->where('visit_id', $v->visit_id)->get();
+    //     $product->category_name = $v->category_name;
+    //     foreach ($v as $v1) {
+    //     
+    //     }    
+    //     }
+    //     }
+    //     return view('products.reports', compact('products'));
+    //     }
 }
+
+// public function showPharmacy($associativeArray){
+//     $serviceCharge = DB::table('service_charge')
+//     ->select(DB::raw("patient.fname, visit.date, service_charge_name"))
+//     ->where('service_charge_name=pharmarcy')
+//     ->orderByRaw('min(visit.date) desc')
+//     ->get();
+//     $serviceCharge2= json_decode($serviceCharge,TRUE);
+
+//     return $serviceCharge2;
+// }
+    
+    // }
+    // public function hackQuantities(){
+    //     $visitCharge = DB::table('visit_cahrge')
+    //     ->select(DB::raw("quantity"))
+    //     ->get();
+    //     $visitCharge = json_decode($content,TRUE);
+       
+       
+    //   if{
+    //         foreach($visitCharge['quantity'] as $value)
+    //         { $new_quantity = $quantity + 9;
+    //             //Laravel str_slug function help us to convert the keys so as to match
+    //             // with our database table column names and finally we insert our array into the table. 
+    //             $insertArr[str_slug($value['id'],'_')] = $value['value'];
+    //         }
+                   
+    //         DB::table('visitCharge')->insert($insertArr);
+    //         $insertArr = [];
+      
+        
+    //     }
+      
+    //  return "https://www.google.com/search?q=emoji&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi9jsab3IreAhVLjywKHSHYB5oQ_AUIDigB&biw=1280&bih=610#imgrc=OwREzYKRzL4w5M:"
+    // }
+
